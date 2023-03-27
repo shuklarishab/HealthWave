@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{% load static %}
+	<style type="text/css">
+
+		#container{
+			height: 776px;
+			width: 1510px;
+			/*background-color: pink;*/
+		}
+
+		.menu{
+			/*background: url({% static "menu-background.jpg" %});*/
+			background-color:#3498DB;
+			height: 60px;
+			width: 1510px;	
+		}
+
+		.menu #name{
+			height: 50px;
+			width: 580px;
+			margin-left: 160px;
+			float: left;
+		}
+
+		.menu #link{
+			height: 50px;
+			width: 580px;
+			float: left;
+			/*margin-left: 5px;*/
+		}
+
+		.menu #link #li1{
+			list-style: none;
+			position: relative;
+		}
+
+		.menu #link #li1 li{
+			display: inline;
+			margin: 30px;
+		}
+
+		.menu #link #li1 a{
+			color: white;
+			text-decoration: none;
+		}
+
+		.menu #link #li1 a:hover , .menu #link #li1 li#select a{
+               color: magenta;
+        }
+
+        .menu2{
+        	height: 100px;
+        	width: 1200px;
+        	margin-left: 150px;
+        }
+
+        .menu2 #logo{
+        	height: 100px;
+        	width: 470px;
+        	background: url({% static "logo.jpg" %});
+        	float: left;
+        }
+
+        .menu2 #link2{
+        	height: 100px;
+        	width: 730px;
+        	float: left;
+        }
+
+        .menu2 #link2 #li2{
+        	list-style: none;
+			position: relative;
+			left: 80px;
+			padding-top: 10px;
+			padding-right: 20px;
+        }
+
+        .menu2 #link2 #li2 li{
+        	display: inline;
+			margin: 20px;
+        }
+
+        .menu2 #link2 #li2 a{
+			text-decoration: none;
+		}
+
+		.menu2 #link2 #li2 a:hover , .menu2 #link2 #li2 li#select2 a{
+               color: #43C6DB;
+        }
+        
+        #pageDisplay{
+        	height: 50px;
+        	width: 1510px;
+        	/*background: url({% static "menu-background.jpg" %});*/
+        	background-color: #3498DB;
+        }
+
+        #PicSection{
+        	background: url({% static "about-background-image.jpg" %});
+        	height: 650px;
+        	width: 1510px;
+        	/*margin-left: 150px;*/
+        }
+
+		#MainQuote{
+			height: 600px;
+        	width: 1510px;
+        	/*background-color: yellow;*/
+		}
+
+		#Quote{
+        	height: 200px;
+        	width: 400px;
+        	background-color: #3498DB;
+        	display: inline-block;
+        	*display: inline;
+        	/*background-color:red;*/
+        	margin-left: 70px;
+        	padding-top: 180px;
+        	top: 10px;
+        	color: black;
+        }        
+        
+        #Quote1{
+        	height: 200px;
+        	width: 400px;
+        	display: inline-block;
+        	*display: inline;
+        	background-color: #3498DB;
+        	/*background-color:red;*/
+        	margin-left: 70px;
+        	padding-top: 180px;
+        	top: 35px;
+        	color: black;
+        }        
+        
+        #Quote2{
+        	height: 200px;
+        	width: 400px;
+        	display: inline-block;
+        	*display: inline;
+        	background-color: #3498DB;
+        	/*background-color:red;*/
+        	margin-left: 70px;
+        	padding-top: 180px;
+        	top: 35px;
+        	color: black;
+        }        
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		
+		<div class="menu">
+			<div id="name"> <a style="text-decoration: none;" href="/home"> <h1 style="text-shadow:3px 3px 1px black;color: yellow;font-size: 28px"> HEALTHY WAVE </h1> </a> </div>
+			<div id="link">
+				<ol id="li1">
+					<h4>
+						<li> <a href="/appointment"> Book Appointment </a> </li>
+						<li> <a href="/donate"> Donate </a> </li>
+						<li> <a href="/login"> Login </a> </li>
+					</h4>
+				</ol>
+			</div>
+		</div>
+
+		<div class="menu2">
+			<a href="/home"> <div id="logo"></div> </a>
+			<div id="link2">
+				<ol id="li2">
+					<h3>
+						<li> <a href="/home"> Home </a> </li>
+						<li> <a href="/department"> Department </a> </li>
+						<li id="select2"> <a href="/about"> About </a> </li>
+						<li> <a href="/contact"> Contact Us </a> </li>
+					</h3>
+				</ol>
+			</div>
+		</div>
+
+		<div id="pageDisplay">
+			<center> <h4 style="text-shadow:2px 2px 1px black;color: white;margin-top: 0px;font-size: 28px;"> About </h4> </center>
+		</div>
+
+		<div id="PicSection">
+			<center>
+				<h1 style="color: white;margin-top: 0px;">Why Choose Health Wave?</h1>
+			</center>
+			<div id="MainQuote">
+				<div id="Quote" style="position: relative;">
+					<h2 style="font-size: 20px"><i><center> More experience</center><br><center> Every year, more than a million people come to Health Wave for care. Our highly specialized experts are deeply experienced in treating rare and complex conditions. </center></i></h2>
+				</div>
+				
+				<div id="Quote1" style="position: relative;">
+					<h2 style="font-size: 20px"><i><center>The right answers</center><br>
+					<center>Getting effective treatment depends on identifying the right problem. In a recent study, 88 percent of patients who came to Health Wave for a second opinion received a new or refined diagnosis.</center></i></h2>
+				</div>
+				
+				<div id="Quote2" style="position: relative;">
+					<h1 style="font-size: 20px"> <i><center> Seamless care</center><br>
+					<center>At Health Wave, every aspect of your care is coordinated and teams of experts work together to provide exactly the care you need. What might take months elsewhere can often be done in days here. </i></center> </h1>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
